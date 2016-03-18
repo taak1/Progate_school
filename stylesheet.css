@@ -1,3 +1,533 @@
-h1 {
-	color: red;
+body {
+  margin: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #0dc0c0;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h4, h5 {
+  color: #444;
+  font-size: 18px;
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*-------  ここまで共通のCSS（変更不要） --------*/
+
+/*------- ここからCSSを書き始めてください --------*/
+
+header {
+  height: 100px;
+  border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  color: #777;
+  font-size:20px;
+  float: left;
+  padding:15px;
+  font-family: 'Dosis', sans-serif;
+  font-weight:bold;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header-right {
+  color : #323A45;
+  float: right;
+  font-weight:bold;
+}
+
+.header-right li {
+  float: left;
+  padding:15px;
+}
+
+.container {
+  width:1170px;
+padding:0 15px;
+margin:0 auto;
+} 
+
+.top-wrapper {
+  height: 500px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/top.jpg);
+color: #f3f3f3;
+  text-align: center;
+}
+
+.top-wrapper  h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 48px;
+  padding-top:200px;
+}
+
+.top-wrapper p {
+  font-size: 20px;
+  padding-top: 20px;
+  color:rgba(255, 255, 255, 0.8);
+}
+
+.btn  a {
+  background-color: rgba(250, 250, 250, 0.06);
+  display:inline-block;
+  font-size: 18px;
+  color: #f3f3f3;
+  padding:10px 20px;
+  margin:20px;
+  border:1px solid rgba(250, 250, 250, 0.15);
+}
+
+.btn a:hover {
+border:1px solid rgba(250, 250, 250, 1);  
+}
+
+.answer {
+  display:none;
+}
+
+.countainer {
+  width: 1170px;
+  padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+.heading h3 {
+  color:#555;
+  margin:10px 0;
+  font-size: 32px;
+  margin-top:50px;
+  text-align: center;
+  font-weight:300;
+  line-height:36px;
+} 
+
+.lesson-wrapper {
+  padding-bottom: 60px;
+    color: #888;
+    text-align: center;
+}
+
+.language-box-wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+/*lesson-boxの位置が左サイドに寄っている*/
+
+.lesson-box {
+  display: inline-block;
+    vertical-align: top;
+    width: 38%;
+    padding: 20px;
+    text-align:center;
+}
+
+.lesson-box h4 {
+  color:#444;
+}
+
+.lesson-box p {
+  color: #888;
+}
+
+.text-contents {
+  margin: 3% auto;
+  display: none;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.text-active {
+  display: block;
+}
+
+.feature-wrapper {
+  text-align: center;
+  height: 376px;
+  margin-top: 40px;
+  padding-top:50px;
+}
+
+/*背景のグレイと画像の位置のずれ*/
+.gray-section {
+  background: #f4f4f4;
+    color: #888;
+}
+ 
+ .feature-title {
+   font-size: 28px;
+ } 
+ 
+ .feature-wrapper-bottom {
+   padding-top:60px;
+ }
+ 
+ .feature-box {
+   display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    padding-left: 65px;
+    margin-bottom: 60px;
+ }
+ 
+ .course-wrapper {
+   background: #f4f4f4;
+    color: #888;
+ }
+ 
+ .course-title {
+  text-align: center;
+  font-size: 28px;
+  padding:40px;
+ }
+ 
+ .course-column  {
+   display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    padding: 25px 15px 15px 15px;
+    margin: 20px 13px 50px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+ }
+ 
+ .course-column h2 {
+   background-color: #323A45;
+   color:white;
+   font-size: 28px;
+   padding:31px;
+   margin-bottom: 0px;
+ }
+ 
+ .course-column h3 {
+   background-color:#f0f0f0;
+   font-size: 28px;
+   padding: 31px;
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+ 
+ .course-column ul {
+   padding: 30px;
+ }
+ 
+ .course-column li {
+   border-top: 1px solid #eee;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #888;
+    font-weight: 400;
+    padding: 18px 0;
+ }
+ 
+ .column-green h2 {
+   background-color: #0DC0C0;
+ }
+ 
+ .btn-pricing {
+   background-color: #2d323a;
+   color: #c9d1d6;
+ }
+ 
+ .btn-pricing:hover {
+   opacity:0.9;
+ }
+ 
+ .btn {
+   display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .3s;
+ }
+ 
+ .mentor-wrapper {
+   text-align: center;
+ }
+ 
+ .mentor-title  h3 {
+   padding-top:50px;
+   padding-bottom:10px;
+   margin: 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+    color: #555;
+ }
+ 
+ .mentor-image {
+   width:200px;
+   height:200px;
+   margin:10px 0;
+   border-radius: 50%;
+ } 
+ 
+ .mentor-box  {
+   width: 80%;
+   margin: 0 auto;
+   margin-bottom: 50px;
+ }
+ 
+ /*背景が暗くならない*/
+ .message-wrapper {
+   background: url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/night_view.jpg");
+ background-size: cover;
+ height:380px;
+ background-color: rgba(0, 0, 0, 0.6)
+ }
+ 
+ .message h3 {
+   color: white;
+   font-size: 22px;
+   line-height: 40px;
+   padding-top:150px;
+ }
+ 
+ .column-wrapper {
+   background-color:#f4f4f4;;
+   width:1170px;
+ }
+ 
+ .column-top  h3 {
+   text-align: center;
+   font-size: 32px;
+   margin: 10px 0;
+   padding-top: 40px;
+ }
+ 
+ .column-filter {
+   text-align: center;
+   margin-bottom:40px;
+ }
+ 
+ .filter-item-active {
+   background-color: #009ca8;
+   color: white;
+   font-weight: 600;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    margin: 10px 5px 0 0;
+    padding: 8px 16px;
+    transition: all .3s;
+   display:inline-block;
+ }
+ 
+ .filter-item {
+    background-color: white;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    margin: 10px 5px 0 0;
+    padding: 8px 16px;
+    transition: all .3s;
+   display:inline-block;
+ }
+ 
+ .filter-item:hover {
+   background-color: #009ca8;
+   color: white;
+   cursor:pointer;
+ }
+ 
+ .column-box {
+   display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    margin: 0 15px 30px;
+    padding: 7px 7px 27px;
+ }
+ 
+ .caption-defaultWrap img {
+   width: 467px;
+   height: 270px;
+ }
+ 
+.caption-defaultWrap-active img {
+  width: 150%;
+  height: 150%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2)
+}
+
+ .column-title {
+   display: block;
+    margin-top: 17px;
+    color: #444;
+    font-size: 17px;
+    font-weight: 600;
+   text-align: center;
+   cursor: pointer;
+ }
+ 
+ p {
+   text-align: center;
+ }
+ 
+ .btn {
+  text-align: center;
+ }
+ 
+ .contact-section {
+    background: url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/contact.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.section-title  h3 {
+  font-weight: 300;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+ 
+ .contact-section-inner {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 70px;
+}
+
+.contact-form {
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+}
+
+.contact-about {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.contact-section h4 {
+  color: white;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+li, h1, h2, h3, h4, h5, h6, pre, form, html, p, blockquote, fieldset, input, div, ul, ol {
+    margin: 0;
+    padding: 0;
+    transition: all .8s ease;
+}
+
+
+
+input[type="text"], textarea {
+    margin: 0;
+    padding: 0 10px;
+    vertical-align: middle;
+    background: rgba(250, 250, 250, 0.08);
+    border: none;
+    width: 85%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all .3s;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.btn-contact {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background: #0dc0c0;
+    border: 1px solid #09b1b9;
+    color: white;
+    box-shadow: inset 0 1px 0 #0fc8c8;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    margin: 10px 0;
+    padding: 15px 35px;
+}
+
+p {
+  float:left;
+}
+
+.social-section {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    color: #555;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.section-title h3 {
+  　color: white;
+    margin: 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.social-icon {
+    text-align: center;
+    font-size: 36px;
+    line-height: 76px;
+    color: #323A45;
+    padding: 5px;
+    transition: all .3s;
+}
+
+footer {
+    text-align: center;
+    padding: 39px 0 36px;
+    background: #222;
+    color: #999;
 }
